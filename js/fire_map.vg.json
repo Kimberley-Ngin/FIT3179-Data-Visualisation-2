@@ -28,7 +28,7 @@
         "mark": {
           "type": "circle",
           "tooltip": {
-            "content": "data"
+            "content": "encoding"
           }
         },
         "encoding": {
@@ -40,13 +40,19 @@
             "field": "latitude",
             "type": "quantitative"
           },
+          "size": {
+            "field": "frp",
+            "type": "quantitative",
+            "title": "Fire Radiative Power",
+            "scale": {"range": [10,150], "domain": [0,1800]}
+          },
           "color": {
             "field": "frp",
             "type": "quantitative",
             "title": "Fire Radiative Power",
             "scale": {
-              "scheme": "reds",
-              "domain": [0, 25, 50, 100, 200, 500, 750, 1000, 1500]
+              "scheme": "darkred",
+              "domain": [0,1800]
             }
           }
         }
