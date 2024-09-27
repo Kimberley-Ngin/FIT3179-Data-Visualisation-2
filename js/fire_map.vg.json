@@ -27,7 +27,6 @@
         },
         "mark": {
           "type": "circle",
-          "opacity": 1,
           "tooltip": {
             "content": "data"
           }

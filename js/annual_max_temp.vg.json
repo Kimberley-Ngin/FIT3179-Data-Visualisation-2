@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Annual Maximum Temperature in Australia by State",
+    "width": 800,
+    "height": 400,
+    "data": {"url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_max_temp.csv"},
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "timeUnit": {"unit": "year"},
+            "field": "year",
+            "type": "temporal"
+          },
+          "y": {"field": "avg_max_temp", "type": "quantitative"},
+          "color": {"field": "state", "type": "nominal"}
+        }
+      },
+      {
+        "mark": {"type": "point", "opacity": 1, "filled": false, "fill": "white"},
+        "encoding": {
+          "x": {
+            "title": "Year",
+            "timeUnit": {"unit": "year"},
+            "field": "year",
+            "type": "temporal"
+          },
+          "y": {
+            "title": "Average Maximum Temperature", 
+            "field": "avg_max_temp", 
+            "type": "quantitative"},
+          "color": {
+            "field": "state", 
+            "type": "nominal"}
+        }
+      }
+    ]
+  }
