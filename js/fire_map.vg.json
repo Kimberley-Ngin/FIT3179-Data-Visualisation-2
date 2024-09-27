@@ -2,9 +2,9 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 800,
     "height": 450,
-    "title": "Forest Fire ",
+    "title": "Fires in Australia (January 4 2020)",
     "projection": {
-      "type": "equalEarth"
+      "type": "mercator"
     },
     "layer": [
       {
@@ -23,10 +23,11 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/data/earthquake.csv"
+          "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/fire_spots.csv"
         },
         "mark": {
           "type": "circle",
+          "opacity": 1,
           "tooltip": {
             "content": "data"
           }
@@ -40,35 +41,16 @@
             "field": "latitude",
             "type": "quantitative"
           },
-          "size": {
-            "field": "FRP",
+          "color": {
+            "field": "frp",
             "type": "quantitative",
             "title": "Fire Radiative Power",
             "scale": {
-              "domain": [
-                50,
-                100,
-                150,
-                200,
-                250,
-                300,
-                350,
-                400,
-                450,
-                500
-              ]
+              "scheme": "reds",
+              "domain": [0, 25, 50, 100, 200, 500, 750, 1000, 1500]
             }
           }
-        //   ,
-        //   "color": {
-        //     "field": "depth",
-        //     "type": "quantitative",
-        //     "title": "Depth in km",
-        //     "scale": {
-        //       "scheme": "reds"
-        //     }
-        //   }
-        // }
+        }
       }
     ]
   }
