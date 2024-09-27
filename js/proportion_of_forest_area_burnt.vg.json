@@ -7,7 +7,7 @@
       "type": "mercator"
     },
     "data": {
-      "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-HomeworkTask-Wk9/refs/heads/main/data/STE_2016_AUST.json",
+      "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/STE_2016_AUST.json",
       "format": {
         "type": "topojson",
         "feature": "STE_2016_AUST"
@@ -18,7 +18,7 @@
         "lookup": "properties.STE_NAME16",
         "from": {
           "data": {
-            "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-HomeworkTask-Wk9/refs/heads/main/data/forest_area_burnt_2019_20.csv"
+            "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/forest_area_burnt_2019_20.csv"
           },
           "key": "state",
           "fields": [
@@ -39,8 +39,8 @@
         "type": "quantitative",
         "scale": {
         "type": "threshold",
-        "domain": [0, 5, 10, 15, 20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100],
-        "scheme": "goldorange"
+        "domain": [0, 1, 5, 20, 50, 80, 100],
+        "scheme": "orangered"
       },
       "legend": {"title": "Forest Area Burnt (%)"}
       },
