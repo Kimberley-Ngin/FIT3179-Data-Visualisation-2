@@ -1,0 +1,74 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 450,
+    "title": "Forest Fire ",
+    "projection": {
+      "type": "equalEarth"
+    },
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/STE_2016_AUST.json",
+          "format": {
+            "type": "topojson",
+            "feature": "STE_2016_AUST"
+          }
+        },
+        "mark": {
+          "type": "geoshape",
+          "fill": "lightgray",
+          "stroke": "white"
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/data/earthquake.csv"
+        },
+        "mark": {
+          "type": "circle",
+          "tooltip": {
+            "content": "data"
+          }
+        },
+        "encoding": {
+          "longitude": {
+            "field": "longitude",
+            "type": "quantitative"
+          },
+          "latitude": {
+            "field": "latitude",
+            "type": "quantitative"
+          },
+          "size": {
+            "field": "FRP",
+            "type": "quantitative",
+            "title": "Fire Radiative Power",
+            "scale": {
+              "domain": [
+                50,
+                100,
+                150,
+                200,
+                250,
+                300,
+                350,
+                400,
+                450,
+                500
+              ]
+            }
+          }
+        //   ,
+        //   "color": {
+        //     "field": "depth",
+        //     "type": "quantitative",
+        //     "title": "Depth in km",
+        //     "scale": {
+        //       "scheme": "reds"
+        //     }
+        //   }
+        // }
+      }
+    ]
+  }
