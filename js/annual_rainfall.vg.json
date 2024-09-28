@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Annual Maximum Temperature in Australia by State",
+    "title": "Annual Rainfall in Australia over Time",
     "width": 800,
     "height": 400,
     "data": {"url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_rainfall.csv"},
