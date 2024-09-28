@@ -18,7 +18,13 @@
             "field": "Rainfall", 
             "type": "quantitative",
             "title": "Annual Rainfall (mm)"
+            },
+            "color": {
+            "condition": {
+                "test": "year(datum.Year) == 2019",
+                "value": "coral"
             }
+          }
         }
       },
       {
@@ -32,9 +38,9 @@
           },
           "y": {
             "field": "11_year_average", 
-            "type": "quantitative"}
-        }
+            "type": "quantitative"
+            }
       }
-      
+    }
     ]
   }
