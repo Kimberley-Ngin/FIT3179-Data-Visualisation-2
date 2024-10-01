@@ -24,7 +24,11 @@
                 "test": "year(datum.Year) == 2019",
                 "value": "coral"
             }
-          }
+          },
+          "tooltip": [
+            {"field": "Year", "type": "temporal", "format": "%Y"},
+            {"field": "Rainfall", "type": "quantitative", "title": "Rainfall (mm)", "format": ".2f"}
+          ]
         }
       },
       {
@@ -39,7 +43,11 @@
           "y": {
             "field": "11_year_average", 
             "type": "quantitative"
-            }
+            },
+          "tooltip": [
+            {"field": "Year", "type": "temporal", "format": "%Y"},
+            {"field": "11_year_average", "type": "quantitative", "title": "11 Year Average", "format": ".2f"}
+          ]
       }
     }
     ]

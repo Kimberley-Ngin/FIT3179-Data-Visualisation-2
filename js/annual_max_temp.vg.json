@@ -32,7 +32,12 @@
             "type": "quantitative"},
           "color": {
             "field": "state", 
-            "type": "nominal"}
+            "type": "nominal"},
+          "tooltip": [
+            {"field": "year", "type": "nominal", "title": "Year"},
+            {"field": "avg_max_temp", "type": "quantitative", "title": "Average Maximmum Temperature"},
+            {"field": "state", "type": "nominal", "title": "State"}
+          ]
         }
       }
     ]
