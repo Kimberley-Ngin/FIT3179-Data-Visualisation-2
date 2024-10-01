@@ -27,7 +27,8 @@
           },
           "tooltip": [
             {"field": "Year", "type": "temporal", "format": "%Y"},
-            {"field": "Rainfall", "type": "quantitative", "title": "Rainfall (mm)", "format": ".2f"}
+            {"field": "Rainfall", "type": "quantitative", "title": "Rainfall (mm)", "format": ".2f"},
+            {"field": "11_year_average", "type": "quantitative", "title": "11 Year Average", "format": ".2f"}
           ]
         }
       },
@@ -43,11 +44,7 @@
           "y": {
             "field": "11_year_average", 
             "type": "quantitative"
-            },
-          "tooltip": [
-            {"field": "Year", "type": "temporal", "format": "%Y"},
-            {"field": "11_year_average", "type": "quantitative", "title": "11 Year Average", "format": ".2f"}
-          ]
+            }
       }
     }
     ]
