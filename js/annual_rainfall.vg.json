@@ -3,49 +3,77 @@
     "title": "Annual Rainfall in Australia over Time",
     "width": 800,
     "height": 400,
-    "data": {"url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_rainfall.csv"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_rainfall.csv"
+    },
     "layer": [
       {
-        "mark": {"type": "bar", "width": {"band": 0.7}},
+        "mark": {
+          "type": "bar",
+          "width": {
+            "band": 0.7
+          }
+        },
         "encoding": {
           "x": {
-            "timeUnit": {"unit": "year"},
+            "timeUnit": {
+              "unit": "year"
+            },
             "field": "Year",
             "type": "temporal",
             "title": "Year"
           },
           "y": {
-            "field": "Rainfall", 
+            "field": "Rainfall",
             "type": "quantitative",
             "title": "Annual Rainfall (mm)"
-            },
-            "color": {
+          },
+          "color": {
             "condition": {
-                "test": "year(datum.Year) == 2019",
-                "value": "coral"
+              "test": "year(datum.Year) == 2019",
+              "value": "coral"
             }
           },
           "tooltip": [
-            {"field": "Year", "type": "temporal", "format": "%Y"},
-            {"field": "Rainfall", "type": "quantitative", "title": "Rainfall (mm)", "format": ".2f"},
-            {"field": "11_year_average", "type": "quantitative", "title": "11 Year Average", "format": ".2f"}
+            {
+              "field": "Year",
+              "type": "temporal",
+              "format": "%Y"
+            },
+            {
+              "field": "Rainfall",
+              "type": "quantitative",
+              "title": "Rainfall (mm)",
+              "format": ".2f"
+            },
+            {
+              "field": "11_year_average",
+              "type": "quantitative",
+              "title": "11 Year Average",
+              "format": ".2f"
+            }
           ]
         }
       },
       {
-        "mark": {"type": "line", "color": "yellowgreen"},
+        "mark": {
+          "type": "line",
+          "color": "yellowgreen"
+        },
         "encoding": {
           "x": {
-            "timeUnit": {"unit": "year"},
+            "timeUnit": {
+              "unit": "year"
+            },
             "field": "Year",
             "type": "temporal",
             "title": "Year"
           },
           "y": {
-            "field": "11_year_average", 
+            "field": "11_year_average",
             "type": "quantitative"
-            }
+          }
+        }
       }
-    }
     ]
   }

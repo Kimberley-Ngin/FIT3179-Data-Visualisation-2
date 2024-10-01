@@ -3,56 +3,95 @@
     "title": "Annual Maximum Temperature in Australia by State",
     "width": 800,
     "height": 400,
-    "data": {"url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_max_temp.csv"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_max_temp.csv"
+    },
     "layer": [
       {
         "selection": {
-            "state_highlight": {
+          "state_highlight": {
             "type": "multi",
-            "fields": ["state"],
+            "fields": [
+              "state"
+            ],
             "bind": "legend"
-            }
+          }
         },
         "mark": "line",
         "encoding": {
           "x": {
-            "timeUnit": {"unit": "year"},
-            "field": "year",
-            "type": "temporal"
-          },
-          "y": {"field": "avg_max_temp", "type": "quantitative"},
-          "color": {"field": "state", "type": "nominal"},
-          "opacity": {
-            "condition": {"selection": "state_highlight", "value": 0.6},
-            "value": 0.2
-            }
-        }
-      },
-      {
-        
-        "mark": {"type": "point", "opacity": 1, "filled": false, "fill": "white"},
-        "encoding": {
-          "x": {
-            "title": "Year",
-            "timeUnit": {"unit": "year"},
+            "timeUnit": {
+              "unit": "year"
+            },
             "field": "year",
             "type": "temporal"
           },
           "y": {
-            "title": "Average Maximum Temperature", 
-            "field": "avg_max_temp", 
-            "type": "quantitative"},
+            "field": "avg_max_temp",
+            "type": "quantitative"
+          },
           "color": {
-            "field": "state", 
-            "type": "nominal"},
+            "field": "state",
+            "type": "nominal"
+          },
           "opacity": {
-            "condition": {"selection": "state_highlight", "value": 0.6},
-            "value": 0.2
+            "condition": {
+              "selection": "state_highlight",
+              "value": 0.6
             },
+            "value": 0.2
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "opacity": 1,
+          "filled": false,
+          "fill": "white"
+        },
+        "encoding": {
+          "x": {
+            "title": "Year",
+            "timeUnit": {
+              "unit": "year"
+            },
+            "field": "year",
+            "type": "temporal"
+          },
+          "y": {
+            "title": "Average Maximum Temperature",
+            "field": "avg_max_temp",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "state",
+            "type": "nominal"
+          },
+          "opacity": {
+            "condition": {
+              "selection": "state_highlight",
+              "value": 0.6
+            },
+            "value": 0.2
+          },
           "tooltip": [
-            {"field": "year", "type": "temporal", "title": "Year", "format": "%Y"},
-            {"field": "avg_max_temp", "type": "quantitative", "title": "Average Maximmum Temperature"},
-            {"field": "state", "type": "nominal", "title": "State"}
+            {
+              "field": "year",
+              "type": "temporal",
+              "title": "Year",
+              "format": "%Y"
+            },
+            {
+              "field": "avg_max_temp",
+              "type": "quantitative",
+              "title": "Average Maximmum Temperature"
+            },
+            {
+              "field": "state",
+              "type": "nominal",
+              "title": "State"
+            }
           ]
         }
       }
