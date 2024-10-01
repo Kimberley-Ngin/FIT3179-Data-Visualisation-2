@@ -6,6 +6,13 @@
     "data": {"url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_max_temp.csv"},
     "layer": [
       {
+        "selection": {
+            "state_highlight": {
+            "type": "multi",
+            "fields": ["state"],
+            "bind": "legend"
+            }
+        },
         "mark": "line",
         "encoding": {
           "x": {
@@ -14,10 +21,15 @@
             "type": "temporal"
           },
           "y": {"field": "avg_max_temp", "type": "quantitative"},
-          "color": {"field": "state", "type": "nominal"}
+          "color": {"field": "state", "type": "nominal"},
+          "opacity": {
+            "condition": {"selection": "state_highlight", "value": 0.6},
+            "value": 0.2
+            }
         }
       },
       {
+        
         "mark": {"type": "point", "opacity": 1, "filled": false, "fill": "white"},
         "encoding": {
           "x": {
@@ -33,8 +45,12 @@
           "color": {
             "field": "state", 
             "type": "nominal"},
+          "opacity": {
+            "condition": {"selection": "state_highlight", "value": 0.6},
+            "value": 0.2
+            },
           "tooltip": [
-            {"field": "year", "type": "nominal", "title": "Year"},
+            {"field": "year", "type": "temporal", "title": "Year", "format": "%Y"},
             {"field": "avg_max_temp", "type": "quantitative", "title": "Average Maximmum Temperature"},
             {"field": "state", "type": "nominal", "title": "State"}
           ]
