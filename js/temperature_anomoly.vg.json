@@ -41,7 +41,10 @@
             "test": "datum.Temperature < 0",
             "value": "blue"
           },
-          "value": "orange"
+          "value": "#ffaf7a"
+        },
+        "opacity": {
+          "value": 0.7
         },
         "tooltip": [
             {
@@ -54,8 +57,30 @@
               "field": "Temperature",
               "type": "quantitative",
               "title": "Temperature Anomoly (°C)"
-            }
+            },
+            {
+              "field": "11-year mean",
+              "type": "quantitative",
+              "title": "11-Year Mean",
+              "format": ".2f"
+            }  
           ]
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "11-year mean",
+          "type": "quantitative"
+        },
+        "color": {
+          "value": "red"
+        }
       }
     }
   ]
