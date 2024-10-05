@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Temperature Anomoly in Australia over Time",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/temperature_anomoly.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "y": {
+          "datum": 0
+        }
+      }
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Temperature",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -1.5,
+              1.8
+            ]
+          }
+        },
+        "color": {
+          "condition": {
+            "test": "datum.Temperature < 0",
+            "value": "blue"
+          },
+          "value": "orange"
+        },
+        "tooltip": [
+            {
+              "field": "Year",
+              "type": "temporal",
+              "title": "Year",
+              "format": "%Y"
+            },
+            {
+              "field": "Temperature",
+              "type": "quantitative",
+              "title": "Temperature Anomoly (°C)"
+            }
+          ]
+      }
+    }
+  ]
+}

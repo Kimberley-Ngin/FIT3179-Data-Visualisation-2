@@ -48,8 +48,9 @@
           "color": {
             "condition": {
               "test": "year(datum.Year) == 2019",
-              "value": "coral"
-            }
+              "value": "#ffaf7a"
+            },
+            "value": "#C4D8F3"
           },
           "tooltip": [
             {

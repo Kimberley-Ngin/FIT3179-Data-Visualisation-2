@@ -37,7 +37,7 @@
           "opacity": {
             "condition": {
               "selection": "state_highlight",
-              "value": 0.6
+              "value": 0.8
             },
             "value": 0.2
           }
