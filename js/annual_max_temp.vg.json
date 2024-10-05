@@ -60,7 +60,7 @@
             "type": "temporal"
           },
           "y": {
-            "title": "Average Maximum Temperature",
+            "title": "Annual Maximum Temperature",
             "field": "avg_max_temp",
             "type": "quantitative"
           },
@@ -90,7 +90,7 @@
             {
               "field": "state",
               "type": "nominal",
-              "title": "State"
+              "title": "City"
             }
           ]
         }

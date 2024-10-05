@@ -6,6 +6,23 @@
     "data": {
       "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_rainfall.csv"
     },
+    "params": [
+    {
+      "name": "Year_Above",
+      "value": 1950,
+      "bind": {
+      "input": "range",
+      "min": 1950,
+      "max": 2015,
+      "step": 5,
+      "name": "Year: "
+      }
+      }
+      ],
+      "transform": [
+        {
+        "filter": "year(datum.Year) > Year_Above"
+      }],
     "layer": [
       {
         "mark": {
