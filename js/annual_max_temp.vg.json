@@ -7,6 +7,15 @@
       "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_max_temp.csv"
     },
     "layer": [
+        {
+            "mark": "rect",
+            "encoding": {
+              "x": {"value": 600},
+              "x2": {"value": 645},
+              "color": {"value": "#ECECEC"},
+              "opacity": {"value": 0.5}
+            }
+          },
       {
         "selection": {
           "state_highlight": {
@@ -95,5 +104,8 @@
           ]
         }
       }
-    ]
+    ],
+    "config": {
+    "font": "Times New Roman"
+    }
   }

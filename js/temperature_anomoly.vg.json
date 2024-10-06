@@ -1,11 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Temperature Anomoly in Australia over Time",
-  "width": 800,
-  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/temperature_anomoly.csv"
   },
+  "vconcat": [
+    {
+  "width": 800,
+  "height": 400,
   "layer": [
     {
       "mark": {
@@ -24,7 +26,9 @@
       "encoding": {
         "x": {
           "field": "Year",
-          "type": "temporal"
+          "type": "temporal",
+          "scale": {"domain": {"param": "brush"}},
+          "title": "Year"
         },
         "y": {
           "field": "Temperature",
@@ -34,14 +38,21 @@
               -1.5,
               1.8
             ]
-          }
+          },
+          "title": "Temperature Anomoly"
         },
         "color": {
-          "condition": {
-            "test": "datum.Temperature < 0",
-            "value": "blue"
-          },
-          "value": "#ffaf7a"
+          "condition": [
+            {
+              "test": "datum.Temperature < 0",
+              "value": "#5499ED"
+            },
+            {
+              "test": "year(datum.Year) == 2019",
+              "value": "red"
+            }
+          ],
+          "value": "#ED6A54"
         },
         "opacity": {
           "value": 0.7
@@ -72,16 +83,60 @@
       "encoding": {
         "x": {
           "field": "Year",
-          "type": "temporal"
+          "type": "temporal",
+          "scale": {"domain": {"param": "brush"}}
         },
         "y": {
           "field": "11-year mean",
           "type": "quantitative"
         },
         "color": {
-          "value": "red"
+          "value": "black"
         }
       }
     }
-  ]
+  ]},
+  {
+    "width": 800,
+    "height": 150,
+      "mark": "bar",
+      "params": [
+        {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+      ],
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Temperature",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -1.5,
+              1.8
+            ]
+          },
+          "title": "Temperature Anomoly",
+          "axis": {"grid": false}
+        },
+        "color": {
+          "condition": [
+            {
+              "test": "datum.Temperature < 0",
+              "value": "#5499ED"
+            }
+          ],
+          "value": "#ED6A54"
+        },
+        "opacity": {
+          "value": 0.7
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Times New Roman"
+    }
 }

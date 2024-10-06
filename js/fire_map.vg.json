@@ -57,5 +57,8 @@
           }
         }
       }
-    ]
+    ],
+    "config": {
+    "font": "Times New Roman"
+    }
   }
