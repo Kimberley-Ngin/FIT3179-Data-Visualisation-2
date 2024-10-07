@@ -54,14 +54,14 @@
             "field": "frp",
             "type": "quantitative",
             "title": "Fire Radiative Power",
-            "scale": {"range": [0,300], "domain": [0,300]}
+            "scale": {"range": [0,300], "domain": [0,3000]}
           },
           "color": {
             "field": "frp",
             "type": "quantitative",
             "title": "Fire Radiative Power",
             "scale": {
-              "scheme": "reds",
+              "scheme": "darkred",
               "domain": [0,1800]
             }
           }
