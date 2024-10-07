@@ -17,7 +17,7 @@
         },
         "transform": [
             {
-                "filter": "datum.properties.STE_NAME16 === 'New South Wales' || datum.properties.STE_NAME16 === 'Victoria' || datum.properties.STE_NAME16 === 'Queensland' || datum.properties.STE_NAME16 === 'South Australia' || datum.properties.STE_NAME16 === 'Northern Territory'"
+                "filter": "datum.properties.STE_NAME16 === 'New South Wales' || datum.properties.STE_NAME16 === 'Victoria' || datum.properties.STE_NAME16 === 'Queensland' || datum.properties.STE_NAME16 === 'South Australia' || datum.properties.STE_NAME16 === 'Northern Territory'  || datum.properties.STE_NAME16 === 'Tasmania'"
             }
         ],
         "mark": {
