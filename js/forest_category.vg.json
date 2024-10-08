@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Area of Forest Burnt",
+    "width": 300,
+    "height": 150,
+    "data": {
+      "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/forest_category.csv"
+    },
+    "params": [
+        {
+          "name": "category_selection",
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "Native Forest",
+              "Commercial Plantation",
+              "Other"
+            ],
+            "labels": [
+              "Show All",
+              "Native Forest",
+              "Commercial Plantation",
+              "Other"
+            ],
+            "name": "Forest Category Selection: "
+          }
+        }],
+        "transform": [
+    {
+      "filter": "category_selection == null || datum.forest_category == category_selection"
+    }],
+    "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "state",
+      "type": "nominal",
+      "axis": {"title": "State"}
+    },
+    "y": {
+      "field": "forest_area_burnt",
+      "type": "quantitative",
+      "axis": {"title": "Forest Area Burnt ('000 ha)"}
+    },
+    "color": {
+      "field": "forest_category",
+      "type": "nominal",
+      "legend": {"title": "Forest Category"},
+      "scale": {
+        "domain": ["Native Forest", "Commercial Plantation", "Other"],
+        "range": ["#3d614e", "#9fc385", "#a4ce2e"]
+    }
+  }}
+}

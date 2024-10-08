@@ -18,6 +18,10 @@ var vg_5 = "js/proportion_of_forest_area_burnt.vg.json";
 vegaEmbed("#forest_area", vg_5).then(function(result) {
 }).catch(console.error);
 
-var vg_6 = "js/black_saturday.vg.json";
-vegaEmbed("#2009_fires", vg_6).then(function(result) {
+var vg_6 = "js/forest_category.vg.json";
+vegaEmbed("#forest_category", vg_6).then(function(result) {
+}).catch(console.error);
+
+var vg_7 = "js/isotype_grid.vg.json";
+vegaEmbed("#respiratory", vg_7).then(function(result) {
 }).catch(console.error);

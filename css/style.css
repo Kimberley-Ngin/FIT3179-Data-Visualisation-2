@@ -1,23 +1,20 @@
 body {
     background-color: rgb(248, 205, 156);
+    font-family: Avenir;
   }
   
 h1{
     width: 100%;
     font-family: 'Avenir';
     font-size: 50px;
-    margin-left: 20px;
     font-weight: bold;
     color: white;
     line-height: 100px;
     margin-bottom: -15px;
-    
 }
 
 p{
     font-size: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
     font-family: 'Gill Sans';
     font-weight: 100;
     line-height: 30px;
@@ -64,13 +61,10 @@ p{
     font-weight: 500;
 }
 
-.fire-spots-container {
-    width: 100%;
-    border-radius: 0px;
-    background: white;
-    padding-top: 60px;
-    display: flex; 
-    align-items: center;
+.grey {
+    color: grey;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 .page-wrapper{
@@ -79,4 +73,9 @@ p{
     margin: auto;
     padding: 70px;
     padding-top: 35px;
+}
+
+.meta-data{
+    color: grey;
+    font-size:5px;
 }
