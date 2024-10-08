@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Annual Maximum Temperature in Australia by State",
+    "title": "Average Maximum Temperature in Australia by State",
     "width": 600,
     "height": 300,
     "data": {
@@ -69,7 +69,7 @@
             "type": "temporal"
           },
           "y": {
-            "title": "Annual Maximum Temperature",
+            "title": "Average Maximum Temperature",
             "field": "avg_max_temp",
             "type": "quantitative"
           },
@@ -102,6 +102,28 @@
               "title": "City"
             }
           ]
+        }
+      },
+      {
+        "mark": {"type": "text",
+                  "fontSize": 11,
+                  "fontWeight": "lighter",
+                  "align": "left",
+                  "dx": -255,
+                  "dy": 60,
+                  "color": "gray"
+                },
+        "encoding": {
+          "text": {
+            "value": "Average maximum temperatures peaked in 2009 and 2019, coinciding with the 2009 and 2019-20 bushfires."
+          },
+          "opacity": {
+            "condition": {
+                "test": "year(datum.year) == 2019", 
+                "value": 1
+            },
+            "value": 0
+          }
         }
       }
     ],

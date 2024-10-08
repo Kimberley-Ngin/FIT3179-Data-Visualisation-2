@@ -20,8 +20,15 @@
               },
       "encoding": {
         "text": {
-          "value": "Annual temperature anomoly rose above average from 1980 and only continues to increase."
-        }
+          "value": "Annual temperature anomoly rose above average in 1980 and only continues to increase."
+        },
+        "opacity": {
+            "condition": {
+                "test": "year(datum.Year) === 2019", 
+                "value": 1
+            },
+            "value": 0
+          }
       }
     },
     {
