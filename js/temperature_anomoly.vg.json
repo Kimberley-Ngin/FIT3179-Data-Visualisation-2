@@ -6,9 +6,24 @@
   "vconcat": [
     {
       "title": "Temperature Anomoly (°C) in Australia over Time",
-  "width": 700,
+  "width": 600,
   "height": 300,
   "layer": [
+    {
+      "mark": {"type": "text",
+                "fontSize": 12,
+                "fontWeight": "lighter",
+                "align": "left",
+                "dx": -240,
+                "dy": -100,
+                "color": "gray"
+              },
+      "encoding": {
+        "text": {
+          "value": "Annual temperature anomoly rose above average from 1980 and only continues to increase."
+        }
+      }
+    },
     {
       "mark": {
         "type": "rule",
@@ -97,7 +112,7 @@
     }
   ]},
   {
-    "width": 700,
+    "width": 600,
     "height": 100,
     "layer": [
     {
