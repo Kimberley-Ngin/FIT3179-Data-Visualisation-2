@@ -94,7 +94,7 @@
             {
               "field": "11-year mean",
               "type": "quantitative",
-              "title": "11-Year Mean",
+              "title": "11-Year Average (°C)",
               "format": ".2f"
             }  
           ]
