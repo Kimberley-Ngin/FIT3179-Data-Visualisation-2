@@ -1,0 +1,26 @@
+id,name,parent,forest_area
+1,ACT,null,142
+2,NSW,null,20368
+3,NT,null,23735
+4,QLD,null,51830
+5,SA,null,5060
+6,TAS,null,3699
+7,VIC,null,8222
+8,WA,null,20981
+9,Native Forest,1,83
+10,Native Forest,2,"5,015"
+11,Native Forest,4,510
+12,Native Forest,5,118
+13,Native Forest,6,27
+14,Native Forest,7,"1,444"
+15,Native Forest,8,"1,140"
+16,Commercial Plantation,2,92
+17,Commercial Plantation,4,4
+18,Commercial Plantation,5,17
+19,Commercial Plantation,6,3
+20,Commercial Plantation,7,10
+21,Commercial Plantation,8,4
+22,Other,2,16
+23,Other,5,2
+24,Other,7,3
+,,,
