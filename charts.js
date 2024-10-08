@@ -1,4 +1,4 @@
-var vg_1 = "js/fire_map.vg.json";
+var vg_1 = "js/active_fires_view.vg.json";
 vegaEmbed("#fire_spots_map", vg_1).then(function(result) {
 }).catch(console.error);
 
@@ -12,4 +12,12 @@ vegaEmbed("#temp_anomoly", vg_3).then(function(result) {
 
 var vg_4 = "js/annual_max_temp.vg.json";
 vegaEmbed("#max_temp", vg_4).then(function(result) {
+}).catch(console.error);
+
+var vg_5 = "js/proportion_of_forest_area_burnt.vg.json";
+vegaEmbed("#forest_area", vg_5).then(function(result) {
+}).catch(console.error);
+
+var vg_6 = "js/black_saturday.vg.json";
+vegaEmbed("#2009_fires", vg_6).then(function(result) {
 }).catch(console.error);

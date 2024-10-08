@@ -1,0 +1,70 @@
+h1{
+    width: 100%;
+    font-family: 'Avenir';
+    font-size: 50px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+    line-height: 100px;
+    margin-bottom: -15px;
+    
+}
+
+p{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Gill Sans';
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.header-strip {
+    background-color: #1d1d1c; 
+    color: white; 
+    padding-top: 35px;
+    padding-bottom: 45px; 
+    text-align: center; 
+    font-weight: bold; 
+    font-family: 'Avenir';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+  }
+
+.container{
+    width: 100%;
+    border-radius: 5px;
+    background: white;
+    padding-top: 60px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.center-text {
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.orange {
+    color:rgb(244, 175, 89);
+    font-weight: 500;
+}
+
+.fire-spots-container {
+    width: 100%;
+    border-radius: 0px;
+    background: white;
+    padding-top: 60px;
+    display: flex; 
+    align-items: center;
+}
+

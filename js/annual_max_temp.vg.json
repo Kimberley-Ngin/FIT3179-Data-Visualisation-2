@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Annual Maximum Temperature in Australia by State",
-    "width": 800,
-    "height": 400,
+    "width": 660,
+    "height": 300,
     "data": {
       "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/annual_max_temp.csv"
     },
@@ -10,8 +10,8 @@
         {
             "mark": "rect",
             "encoding": {
-              "x": {"value": 600},
-              "x2": {"value": 645},
+              "x": {"value": 500},
+              "x2": {"value": 530},
               "color": {"value": "#ECECEC"},
               "opacity": {"value": 0.5}
             }
@@ -106,6 +106,6 @@
       }
     ],
     "config": {
-    "font": "Times New Roman"
+    "font": "Avenir"
     }
   }

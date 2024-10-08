@@ -1,13 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Temperature Anomoly in Australia over Time",
   "data": {
     "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/temperature_anomoly.csv"
   },
   "vconcat": [
     {
-  "width": 800,
-  "height": 400,
+      "title": "Temperature Anomoly (°C) in Australia over Time",
+  "width": 700,
+  "height": 300,
   "layer": [
     {
       "mark": {
@@ -39,7 +39,7 @@
               1.8
             ]
           },
-          "title": "Temperature Anomoly"
+          "title": "Temperature Anomoly (°C)"
         },
         "color": {
           "condition": [
@@ -97,8 +97,22 @@
     }
   ]},
   {
-    "width": 800,
-    "height": 150,
+    "width": 700,
+    "height": 100,
+    "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeWidth": 0.7
+      },
+      "encoding": {
+        "y": {
+          "datum": 0
+        }
+      }
+    },
+    {
       "mark": "bar",
       "params": [
         {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
@@ -118,7 +132,7 @@
               1.8
             ]
           },
-          "title": "Temperature Anomoly",
+          "title": "Temperature Anomoly (°C)",
           "axis": {"grid": false}
         },
         "color": {
@@ -135,8 +149,8 @@
         }
       }
     }
-  ],
+  ]}],
   "config": {
-    "font": "Times New Roman"
+    "font": "Avenir"
     }
 }
