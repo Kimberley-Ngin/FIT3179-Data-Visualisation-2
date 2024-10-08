@@ -50,5 +50,23 @@
         "domain": ["Native Forest", "Commercial Plantation", "Other"],
         "range": ["#3d614e", "#9fc385", "#a4ce2e"]
     }
-  }}
+  },
+    "tooltip": [
+            {
+              "field": "state",
+              "type": "nominal",
+              "title": "State"
+            },
+            {
+              "field": "forest_category",
+              "type": "nominal",
+              "title": "Forest Area Category"
+            },
+            {
+              "field": "forest_area_burnt",
+              "type": "quantitative",
+              "title": "Forest Area Burnt ('000 ha)"
+            }
+          ]}
+  
 }
