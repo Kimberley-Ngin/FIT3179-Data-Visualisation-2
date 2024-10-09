@@ -69,7 +69,7 @@
             "type": "temporal"
           },
           "y": {
-            "title": "Average Maximum Temperature",
+            "title": "Average Maximum Temperature (°C)",
             "field": "avg_max_temp",
             "type": "quantitative"
           },
@@ -94,7 +94,7 @@
             {
               "field": "avg_max_temp",
               "type": "quantitative",
-              "title": "Average Maximmum Temperature"
+              "title": "Average Maximmum Temperature (°C)"
             },
             {
               "field": "state",
@@ -119,7 +119,7 @@
           },
           "opacity": {
             "condition": {
-                "test": "year(datum.year) == 2019", 
+                "test": "year(datum.year) === 2019", 
                 "value": 1
             },
             "value": 0
