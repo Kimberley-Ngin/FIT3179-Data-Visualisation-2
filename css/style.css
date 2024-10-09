@@ -4,7 +4,6 @@ body {
   }
   
 h1{
-    width: 100%;
     font-family: 'Avenir';
     font-size: 50px;
     font-weight: bold;
@@ -20,26 +19,32 @@ p{
     line-height: 30px;
 }
 
+.page-wrapper{
+    width: 1400px;
+    background-color: white;
+    margin: auto;
+    padding-top: 0;
+}
+
 .header-strip {
     background-color: #1d1d1c; 
     color: white; 
     padding-top: 35px;
-    padding-bottom: 45px; 
+    padding-bottom: 70px; 
     text-align: center; 
     font-weight: bold; 
     font-family: 'Avenir';
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it stays on top */
+    width: 1400px;
   }
+
+.content {
+    padding: 70px;
+}
 
 .container{
     width: 100%;
-    border-radius: 5px;
     background: white;
-    padding-top: 60px;
+    padding-top: 50px;
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
@@ -66,15 +71,15 @@ p{
     font-size: 20px;
 }
 
-.page-wrapper{
-    width: 1300px;
-    background-color: white;
-    margin: auto;
-    padding: 70px;
-    padding-top: 35px;
-}
-
 .meta-data{
     color: grey;
     font-size:15px;
 }
+
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: #dbd7d1;
+    border-radius: 50%;
+    display: inline-block;
+  }

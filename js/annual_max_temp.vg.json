@@ -105,21 +105,22 @@
         }
       },
       {
-        "mark": {"type": "text",
-                  "fontSize": 11,
-                  "fontWeight": "lighter",
-                  "align": "left",
-                  "dx": -255,
-                  "dy": 60,
-                  "color": "gray"
-                },
+        "mark": {
+            "type": "text",
+            "fontSize": 11,
+            "fontWeight": "lighter",
+            "align": "left",
+            "dx": -255,
+            "dy": 60,
+            "color": "gray"
+        },
         "encoding": {
           "text": {
             "value": "Average maximum temperatures peaked in 2009 and 2019, coinciding with the 2009 and 2019-20 bushfires."
           },
           "opacity": {
             "condition": {
-                "test": "year(datum.year) === 2019", 
+                "test": "year(datum.year) === 2019 && datum.state == 'Melbourne'", 
                 "value": 1
             },
             "value": 0

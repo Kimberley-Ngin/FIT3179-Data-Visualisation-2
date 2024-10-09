@@ -48,7 +48,7 @@
       "legend": {"title": "Forest Category"},
       "scale": {
         "domain": ["Native Forest", "Commercial Plantation", "Other"],
-        "range": ["#3d614e", "#9fc385", "#a4ce2e"]
+        "range": ["#3d614e", "#2ea0ce", "#ce512e"]
     }
   },
     "tooltip": [
