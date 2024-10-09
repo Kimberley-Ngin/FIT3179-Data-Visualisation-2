@@ -71,15 +71,11 @@ p{
     font-size: 20px;
 }
 
-.meta-data{
-    color: grey;
-    font-size:15px;
-}
-
 .circle {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-color: #dbd7d1;
     border-radius: 50%;
     display: inline-block;
+    text-align: center;
   }

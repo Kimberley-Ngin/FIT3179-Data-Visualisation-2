@@ -79,7 +79,7 @@
       {
         "mark": {
           "type": "line",
-          "color": "yellowgreen"
+          "color": "black"
         },
         "encoding": {
           "x": {
@@ -93,6 +93,52 @@
           "y": {
             "field": "11_year_average",
             "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "align": "left",
+            "dx": 120,
+            "dy": 130,
+            "color": "gray"
+        },
+        "encoding": {
+          "text": {
+            "value": "2019 annual rainfall is almost"
+          },
+          "opacity": {
+            "condition": {
+                "test": "year(datum.Year) == 2019", 
+                "value": 1
+            },
+            "value": 0
+          }
+        }
+      },
+      {
+        "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "align": "left",
+            "dx": 140,
+            "dy": 145,
+            "color": "gray"
+        },
+        "encoding": {
+          "text": {
+            "value": "half the 2014 average."
+          },
+          "opacity": {
+            "condition": {
+                "test": "year(datum.Year) == 2019", 
+                "value": 1
+            },
+            "value": 0
           }
         }
       }
