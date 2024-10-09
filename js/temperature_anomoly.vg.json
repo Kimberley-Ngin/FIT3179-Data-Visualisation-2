@@ -71,7 +71,7 @@
             },
             {
               "test": "year(datum.Year) == 2019",
-              "value": "red"
+              "value": "#FF000D"
             }
           ],
           "value": "#ED6A54"
