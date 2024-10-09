@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "config": {"view": {"stroke": "white"}},
-    "width": 300,
-    "height": 300,
+    "width": 320,
+    "height": 320,
     "data": {
       "values": [
         {"id": 1}, {"id": 2}, {"id": 3}, {"id": 4}, {"id": 5}, {"id": 6}, {"id": 7}, {"id": 8}, {"id": 9}, {"id": 10},
@@ -32,7 +32,7 @@
         "condition": {"test": "datum.id  <=40", "value": "#ccc6c0"},
         "value": "#f4af59"
       },
-      "size": {"value": 200}
+      "size": {"value": 250}
     }
   }
   
