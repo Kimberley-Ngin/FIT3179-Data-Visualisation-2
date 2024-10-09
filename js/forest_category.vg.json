@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Area of Forest Burnt",
-    "width": 300,
-    "height": 150,
+    "title": "Area of Forest Burnt by Forest Category",
+    "width": 350,
+    "height": 235,
     "data": {
       "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-Data-Visualisation-2/refs/heads/main/data/forest_category.csv"
     },
@@ -67,6 +67,9 @@
               "type": "quantitative",
               "title": "Forest Area Burnt ('000 ha)"
             }
-          ]}
+          ]},
+    "config": {
+    "font": "Avenir"
+    }
   
 }

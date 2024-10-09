@@ -107,10 +107,10 @@
       {
         "mark": {
             "type": "text",
-            "fontSize": 11,
+            "fontSize": 12,
             "fontWeight": "lighter",
             "align": "left",
-            "dx": -255,
+            "dx": -280,
             "dy": 60,
             "color": "gray"
         },
